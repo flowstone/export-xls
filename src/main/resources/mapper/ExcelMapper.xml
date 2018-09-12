@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="me.xueyao.mapper.ExcelMapper">
+
+   <select id="getAllFeedbackForExcel" resultType="me.xueyao.entity.Feedback">
+       select  name, start_time, end_time, document_number
+       FROM feedback;
+   </select>
+</mapper>
